@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+#eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+#eureka.instance.prefer-ip-address=true
+#eureka.client.fetch-registry=true
+#eureka.client.register-with-eureka=true
+
+#spring:
+#  application:
+#    name: gateway-service
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: success-backend
+#          uri: lb://success-backend
+#          predicates:
+#            - Path=/backendserver1/**
+#        - id: failure-backend
+#          uri: lb://failure-backend
+#          predicates:
+#            - Path=/backendserver2/**
+#        - id: pending-backend
+#          uri: lb://pending-backend
+#          predicates:
+#            - Path=/backendserver3/**
+            
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:9094/eureka
+
